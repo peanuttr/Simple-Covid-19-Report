@@ -1,0 +1,17 @@
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="card-body">
+                <h5 class="card-title">{{res.country}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{res.code}}</h6>
+                <p class="card-text">Confirmed : {{res.confirmed | number}} person <br>
+                    Deaths : {{res.deaths | number}} person <br>
+                    Recovered : {{res.recovered | number}} person <br>
+                    update : {{res.lastUpdate | date}}
+                </p>
+                <input type="text" class="form-control" (keyup.enter)="onKey($event)" name="CountryName"
+                    placeholder="Enter Name Country ..">
+            </div>
+        </div>
+    </div>
+</body>
